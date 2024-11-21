@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
 import PulsatingButton from "@/components/ui/pulsating-button";
+import Image from "next/image";
 
 export function PulsatingButtonDemo() {
   return <PulsatingButton>What Our Customers Say</PulsatingButton>;
@@ -71,7 +72,7 @@ const ReviewCard = ({
         )}
       >
         <div className="flex flex-row items-center gap-2">
-          <img
+          <Image
             className="rounded-full"
             width="32"
             height="32"

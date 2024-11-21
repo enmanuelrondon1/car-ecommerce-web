@@ -7,10 +7,9 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { SidebarRoutes } from "../SidebarRoutes";
-import { NavbarDashboarProps } from "./NavbarDasboard.types";
 
-export const NavbarDashboar = (props: NavbarDashboarProps) => {
-  const { showMenu } = props;
+export const NavbarDashboar = () => {
+  // const { showMenu } = props;
   return (
     <nav
       className=" "
@@ -22,7 +21,7 @@ export const NavbarDashboar = (props: NavbarDashboarProps) => {
           </SheetTrigger>
           <SheetContent side="left">
             <SheetTitle>
-              <SidebarRoutes showMenu={showMenu} />
+              <SidebarRoutes  />
             </SheetTitle>
           </SheetContent>
         </Sheet>

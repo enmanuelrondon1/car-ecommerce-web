@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const logos = [
@@ -18,7 +19,7 @@ export const AppStoreBanner = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center sm:text-left">
             <p data-aos="fade-up" className="text-base font-normal text-white sm:text-lg">
-              Pay sure you're using the right app
+              Pay sure you are using the right app
             </p>
             <h2 data-aos="fade-up" className="mt-4 text-3xl font-normal text-white sm:mt-6 sm:text-4xl lg:text-5xl">
               Choose the best app for your needs and download it now.
@@ -29,11 +30,14 @@ export const AppStoreBanner = () => {
 
           <div data-aos="zoom-in" className="grid grid-cols-2 gap-8 mt-8 sm:grid-cols-4 sm:gap-12 sm:mt-12">
             {logos.map((logo, index) => (
-              <img
+              <Image
                 key={index}
                 className="object-contain h-8 max-w-full sm:h-10 w-44"
                 src={logo.src}
                 alt={logo.alt}
+                height={200}
+                width={200}
+       
               />
             ))}
           </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
-import Link from "next/link";
 
 // Define common styles
 const style = {

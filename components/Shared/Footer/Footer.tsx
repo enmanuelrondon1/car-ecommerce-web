@@ -8,9 +8,9 @@ const TwitterIcon = () => <FiTwitter className="w-6 h-6" />;
 const FacebookIcon = () => <FiFacebook className="w-6 h-6" />;
 const InstagramIcon = () => <FiInstagram className="w-6 h-6" />;
 
-type Props = {};
+// type Props = {};
 
-export const Footer = (props: Props) => {
+export const Footer = () => {
   // Common anchor styles
   const anchorStyles =
     "text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80 cursor-pointer";

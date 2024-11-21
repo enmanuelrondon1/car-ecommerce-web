@@ -1,23 +1,21 @@
 "use client";
 
-import { useState } from "react";
 import { ModeToggle } from "../ModeToggle";
 import { NavLinks } from "../SidebarRoutes/Sidebar.data";
 import { NavbarDashboar } from "@/components/Shared/NavbarDashboar";
-import Link from "next/link";
 
 export const Navbar = () => {
-  const [showMenu, setShoeMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
 
-  const handleMenu = () => {
-    setShoeMenu(!showMenu);
-  };
+  // const handleMenu = () => {
+  //   setShoeMenu(!showMenu);
+  // };
 
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
   return (
     <>
@@ -48,7 +46,7 @@ export const Navbar = () => {
             {/* Mobile view  */}
             <div className="flex items-center gap-4 md:hidden ">
               <ModeToggle />
-              <NavbarDashboar showMenu={showMenu} />
+              <NavbarDashboar />
             </div>
           </div>
         </div>

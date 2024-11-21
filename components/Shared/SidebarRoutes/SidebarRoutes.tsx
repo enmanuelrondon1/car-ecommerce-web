@@ -1,11 +1,9 @@
 import { dataAdminSidebar, dataGeneralSidebar } from "./Sidebar.data";
 import { SidebarItem } from "./SidebarItem";
-import { Separator } from "@/components/ui/separator";
-import { SidebarRoutesProps } from "./SidebarRoutes.types";
 import { FaUserCircle } from "react-icons/fa";
 
-export const SidebarRoutes = (props: SidebarRoutesProps) => {
-  const { showMenu } = props;
+export const SidebarRoutes = () => {
+
   return (
     <>
       <div

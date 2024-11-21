@@ -49,13 +49,13 @@ const config: Config = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
-  		container: {
-  			center: 'true',
-  			padding: {
-  				DEFAULT: '1rem',
-  				sm: '3rem'
-  			}
-  		},
+  		// container: {
+  		// 	center: 'true',
+  		// 	padding: {
+  		// 		DEFAULT: '1rem',
+  		// 		sm: '3rem'
+  		// 	}
+  		// },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

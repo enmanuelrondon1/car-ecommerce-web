@@ -44,7 +44,7 @@ export default function AboutCarSales() {
             About Our Car Sales
           </h2>
           <p data-aos="fade-up" className="text-gray-600">
-            At DriveWell Motors, we've been turning car dreams into reality
+            At DriveWell Motors, we have been turning car dreams into reality
             since 1995. Our passion for automobiles and commitment to customer
             satisfaction have made us the go-to destination for car enthusiasts
             and first-time buyers alike. We pride ourselves on offering a wide
