@@ -18,7 +18,7 @@ export default function ChatWidget() {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 text-black">
+    <div className="fixed  bottom-4 right-4 z-50 text-black">
       {isOpen ? (
         <div className="bg-white rounded-lg shadow-lg w-80 transition-all duration-300 ease-in-out">
           <div className="p-4 border-b">

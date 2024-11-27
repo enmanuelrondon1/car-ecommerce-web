@@ -19,7 +19,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 w-full z-50 bg-white dark:bg-black">
+      <div className="fixed top-0 w-full z-50 bg-white dark:bg-black p-4 sm:mx-0">
         <div className="container py-2 md:py-0">
           <div className="flex justify-between items-center">
             <div>

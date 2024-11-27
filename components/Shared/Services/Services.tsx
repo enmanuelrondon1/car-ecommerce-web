@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import {
   FaCameraRetro,
   FaGit,
@@ -68,10 +70,15 @@ const skillsData = [
   },
 ];
 export const Services = () => {
+  const [showMore, setShowMore] = useState(3);
+
+  const handleShowMore = () => {
+    setShowMore(showMore + 3);
+  };
   return (
     <>
       <span id="about"></span>
-      <div className="">
+      <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container">
           <div className="pb-12">
             <h1
@@ -82,7 +89,7 @@ export const Services = () => {
             </h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
-            {skillsData.map((skills, index) => (
+            {skillsData.slice(0, showMore).map((skills, index) => (
               <div
                 key={index}
                 data-aos="fade-up"
@@ -94,10 +101,16 @@ export const Services = () => {
                 <p>{skills.description}</p>
                 <a
                   href={skills.link}
-                  className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300 "
+                  className="inline-block mx-4 text-lg font-semibold py-3 text-primary group-hover:text-black duration-300 "
                 >
                   Learn more
                 </a>
+                <Button
+                  className="bg-primary text-white font-semibold px-6 py-2 rounded-full hover:bg-primary-dark transition z-20 mt-3 mx-5"
+                  onClick={handleShowMore}
+                >
+                  Show More
+                </Button>
               </div>
             ))}
           </div>
