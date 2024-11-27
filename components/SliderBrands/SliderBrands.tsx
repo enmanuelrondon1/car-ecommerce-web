@@ -7,7 +7,7 @@ import {
   CarouselContent,
 } from "@/components/ui/carousel";
 import { dataBrands } from "./dataBrands.data";
-import { Reveal } from "../Reveal";
+import { Reveal } from "../Shared/Reveal";
 
 interface Product {
   id: number;
