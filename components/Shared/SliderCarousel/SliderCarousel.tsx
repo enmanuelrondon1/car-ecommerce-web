@@ -1,6 +1,5 @@
-import { cars } from "@/components/SliderBrands/dataBrands.data";
 import { Button } from "@/components/ui/button";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 interface Image {
@@ -9,13 +8,7 @@ interface Image {
   precio: number;
   image: string;
 }
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  image: StaticImageData;
-  // features: string[];
-}
+
 
 const images: Image[] = [
   {

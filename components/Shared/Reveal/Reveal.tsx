@@ -1,6 +1,6 @@
 "use client";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { RevealTypesProps } from "./Reveal.types";
 
 export const fadeIn = (position: string, delay?: number) => {
@@ -42,7 +42,6 @@ export const Reveal = (props: RevealTypesProps) => {
     if (isInView) {
       mainControls.start("visible"), slideControls.start("visible");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInView]);
 
   return (

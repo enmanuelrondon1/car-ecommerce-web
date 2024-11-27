@@ -1,5 +1,5 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -9,28 +9,10 @@ import {
 import { dataBrands } from "./dataBrands.data";
 import { Reveal } from "../Shared/Reveal";
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  image: StaticImageData;
-  url:string
-}
+
 
 export const SliderBrands = () => {
-  const handleClick = async (product: Product) => {
-    console.log(product);
-    const res = await fetch("/api/checkout", {
-      method: "POST",
-      body: JSON.stringify(product),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    const session = await res.json();
-    window.location = session.url;
-    console.log(session);
-  };
+ 
 
   return (
     <Reveal

@@ -1,7 +1,4 @@
-import car1 from "/public/car4.jpg";
-import car2 from "/public/car7.jpg";
-import car3 from "/public/car8.jpg";
-import car4 from "/public/car9.jpg";
+
 
 export const products = [
   {

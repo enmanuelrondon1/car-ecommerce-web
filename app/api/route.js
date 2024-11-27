@@ -1,4 +1,4 @@
-const { NextResponse } = require("next/server");
+const { NextResponse } = ("next/server");
 import { headers } from "next/headers";
 import Stripe from "stripe";
 
